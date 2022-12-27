@@ -27,3 +27,14 @@ print(a-b)
 #10998번 - AxB
 a,b = map(int, input().split())
 print(a*b)
+
+#1008번 - A/B
+#3가지 모두 정답 인정
+a,b = map(int, input().split())
+print(a/b)
+
+a,b = map(float, input().split())
+print(a/b)
+
+a,b = map(float, input().split())
+print(round(a/b,9))
