@@ -16,3 +16,10 @@ print(int(a) + int(b))
 
 a,b = map(int, input().split())
 print(a+b)
+
+#1001번 - A-B
+a, b = input().split()
+print(int(a) - int(b))
+
+a,b = map(int, input().split())
+print(a-b)
