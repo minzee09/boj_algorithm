@@ -46,3 +46,7 @@ print(a-b)
 print(a*b)
 print(a//b)
 print(a%b)
+
+#10926번 - ??!
+text=input()
+print(text + "??!")
