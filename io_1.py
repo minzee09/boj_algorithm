@@ -33,9 +33,11 @@ print(a*b)
 a,b = map(int, input().split())
 print(a/b)
 
+#조건 중 두 정수를 받기에 실수가 올 경우는 X
 a,b = map(float, input().split())
 print(a/b)
 
+#파이썬은 a/b의 값을 실제 값과 10^-9 이하의 상대오차로 저장하기 때문에 round 함수 필요 X
 a,b = map(float, input().split())
 print(round(a/b,9))
 
