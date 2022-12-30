@@ -3,7 +3,7 @@
 #2557번 - Hello world
 print("Hello World!")
 
-#1000번 - A+B
+#1000번 - a+b
 #런타임 에러(ValueError)
 #a = int(input())
 #b = int(input())
@@ -17,18 +17,18 @@ print(int(a) + int(b))
 a,b = map(int, input().split())
 print(a+b)
 
-#1001번 - A-B
+#1001번 - a-b
 a, b = input().split()
 print(int(a) - int(b))
 
 a,b = map(int, input().split())
 print(a-b)
 
-#10998번 - AxB
+#10998번 - axb
 a,b = map(int, input().split())
 print(a*b)
 
-#1008번 - A/B
+#1008번 - a/b
 #3가지 모두 정답 인정
 a,b = map(int, input().split())
 print(a/b)
@@ -73,3 +73,18 @@ chess = [1,1,2,2,2,8]
 a = list(map(int, input().split()))
 for i in range(6):
     print(chess[i] - a[i], end=' ')
+
+#10430번 - 나머지
+#둘다 정답
+
+a,b,c = map(int, input().split())
+
+#1)
+print((a+b)%c)
+print(((a%c)+(b%c))%c)
+
+print((a*b)%c)
+print(((a%c)*(b%c))%c)
+
+#2)
+print((a+b)%c, ((a%c)+(b%c))%c, (a*b)%c, ((a%c)*(b%c))%c, sep='\n')
