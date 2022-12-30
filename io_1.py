@@ -62,3 +62,14 @@ print(text + "??!")
 #정답
 year = input()
 print(int(year)-543)
+
+#3003번 - 킹, 퀸, 룩, 비숍, 나이트, 폰
+#둘다 정답이지만 리스트 사용하는 것이 더 깔끔
+
+k,q,r,b,kn,p =map(int,input().split())
+print(1-k, 1-q, 2-r, 2-b, 2-kn, 8-p)
+
+chess = [1,1,2,2,2,8]
+a = list(map(int, input().split()))
+for i in range(6):
+    print(chess[i] - a[i], end=' ')
