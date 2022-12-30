@@ -88,3 +88,13 @@ print(((a%c)*(b%c))%c)
 
 #2)
 print((a+b)%c, ((a%c)+(b%c))%c, (a*b)%c, ((a%c)*(b%c))%c, sep='\n')
+
+#2588번 - 곱셈
+
+a = int(input())
+b = input()
+
+for i in range(3, 0, -1):
+    print(a * int(b[i - 1]))
+
+print(a * int(b))
